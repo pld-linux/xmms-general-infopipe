@@ -33,7 +33,7 @@ rurkê. Porêczne gdy chcesz dodaæ bie¿±c± informacjê na stronê www
 
 %build
 rm -f missing
-libtolize --copy --force
+libtoolize --copy --force
 aclocal
 %{__autoconf}
 %{__automake}
