@@ -8,6 +8,7 @@ License:	GPL
 Vendor:		Weyfour WWWWolf (aka Urpo Lankinen)
 Group:		X11/Applications/Sound
 Source0:	http://www.beastwithin.org/users/wwwwolf/code/xmms/xmms-infopipe-%{version}.tar.gz
+# Source0-md5:	1ccc90254c58a81f87abc43720fe71bf
 Patch0:		%{name}-tmpdir.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
