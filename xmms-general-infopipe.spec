@@ -6,7 +6,7 @@ Release:	23
 Epoch:		1
 License:	GPL
 Vendor:		Weyfour WWWWolf (aka Urpo Lankinen)
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	http://www.beastwithin.org/users/wwwwolf/code/xmms/xmms-infopipe-%{version}.tar.gz
 Patch0:		%{name}-tmpdir.patch
 BuildRequires:	autoconf
@@ -25,7 +25,7 @@ personal web page, or a web cam page.
 
 %description -l pl
 XMMS InfoPipe to plugin wypisuj±cy aktualny status XMMS przez nazwan±
-rurkê. Porêczne gdy chcesz dodaæ bie¿±c± informacjê np. na stronê WWW.
+rurkê. Porêczne gdy chcemy dodaæ bie¿±c± informacjê np. na stronê WWW.
 
 %prep
 %setup -q -n xmms-infopipe-%{version}
