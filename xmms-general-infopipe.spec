@@ -10,6 +10,7 @@ Group:		X11/Applications/Sound
 Source0:	http://www.beastwithin.org/users/wwwwolf/code/xmms/xmms-infopipe-%{version}.tar.gz
 # Source0-md5:	1ccc90254c58a81f87abc43720fe71bf
 Patch0:		%{name}-tmpdir.patch
+Patch1:		%{name}-divert.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -30,6 +31,7 @@ rurkê. Porêczne gdy chcemy dodaæ bie¿±c± informacjê np. na stronê WWW.
 %prep
 %setup -q -n xmms-infopipe-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
