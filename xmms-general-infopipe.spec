@@ -35,8 +35,8 @@ rurkê. Porêczne gdy chcesz dodaæ bie¿±c± informacjê na stronê www
 rm -f missing
 libtolize --copy --force
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
