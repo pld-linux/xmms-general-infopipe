@@ -1,0 +1,19 @@
+diff -Nur old/configure.in new/configure.in
+--- old/configure.in	2002-02-20 15:06:37.000000000 +0000
++++ new/configure.in	2004-01-05 21:23:50.000000000 +0000
+@@ -1,12 +1,8 @@
+-divert(-1)
++# The configurescriptbuilding kewl fewl for xmms-webinfo plugin...
++# Copyright (c) Weyfour WWWWolf Dec 9 2000
+ 
+-The configurescriptbuilding kewl fewl for xmms-webinfo plugin...
+-Copyright (c) Weyfour WWWWolf Dec 9 2000
++# $Id$
+ 
+-$Id$
+-
+-
+-divert
+ 
+ AC_INIT(src/infopipe.c)
+ AM_INIT_AUTOMAKE(xmms-infopipe, 1.3)
