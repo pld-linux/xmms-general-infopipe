@@ -34,7 +34,7 @@ rurkê. Porêczne gdy chcesz dodaæ bie¿±c± informacjê np. na stronê WWW.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
