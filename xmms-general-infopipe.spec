@@ -2,7 +2,7 @@ Summary:	XMMS - plugin to read current xmms status
 Summary(pl):	Aplet do odczytu aktualnego stanu XMMS
 Name:		xmms-general-infopipe
 Version:	1.3
-Release:	23
+Release:	24
 Epoch:		1
 License:	GPL
 Vendor:		Weyfour WWWWolf (aka Urpo Lankinen)
@@ -13,9 +13,10 @@ Patch0:		%{name}-tmpdir.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 XMMS InfoPipe is a plugin that reports XMMS status via named pipe.
@@ -42,7 +43,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README NEWS
-%attr(755,root,root) %{_libdir}/xmms/General/libinfopipe*.so*
+%attr(755,root,root) %{xmms_general_plugindir}/libinfopipe*.so*
