@@ -2,12 +2,13 @@ Summary:	XMMS - plugin to read current xmms status
 Summary(pl):	Aplet do odczytu aktualnego stanu XMMS
 Name:		xmms-general-infopipe
 Version:	1.3
-Release:	23
+Release:	24
 Epoch:		1
 License:	GPL
 Vendor:		Weyfour WWWWolf (aka Urpo Lankinen)
 Group:		X11/Applications/Multimedia
 Source0:	http://www.beastwithin.org/users/wwwwolf/code/xmms/xmms-infopipe-%{version}.tar.gz
+# Source0-md5:	1ccc90254c58a81f87abc43720fe71bf
 Patch0:		%{name}-tmpdir.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -43,7 +44,8 @@ aclocal
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	 DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
