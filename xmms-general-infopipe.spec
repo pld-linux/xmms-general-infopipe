@@ -2,7 +2,7 @@ Summary:	XMMS - plugin to read current xmms status
 Summary(pl):	Aplet do odczytu aktualnego stanu XMMS
 Name:		xmms-general-infopipe
 Version:	1.3
-Release:	22
+Release:	23
 Epoch:		1
 License:	GPL
 Vendor:		Weyfour WWWWolf (aka Urpo Lankinen)
