@@ -1,5 +1,5 @@
 Summary:	XMMS - plugin to read current XMMS status
-Summary(pl):	Aplet do odczytu aktualnego stanu XMMS-a
+Summary(pl.UTF-8):   Aplet do odczytu aktualnego stanu XMMS-a
 Name:		xmms-general-infopipe
 Version:	1.3
 Release:	25
@@ -24,9 +24,9 @@ XMMS InfoPipe is a plugin that reports XMMS status via named pipe.
 Handy if you want to add interesting real-time information for a
 personal web page, or a web cam page.
 
-%description -l pl
-XMMS InfoPipe to wtyczka wypisuj±ca aktualny status XMMS-a przez nazwan±
-rurkê. Porêczna gdy chcemy dodaæ bie¿±c± informacjê np. na stronê WWW.
+%description -l pl.UTF-8
+XMMS InfoPipe to wtyczka wypisujÄ…ca aktualny status XMMS-a przez nazwanÄ…
+rurkÄ™. PorÄ™czna gdy chcemy dodaÄ‡ bieÅ¼Ä…cÄ… informacjÄ™ np. na stronÄ™ WWW.
 
 %prep
 %setup -q -n xmms-infopipe-%{version}
