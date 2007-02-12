@@ -1,5 +1,5 @@
 Summary:	XMMS - plugin to read current XMMS status
-Summary(pl.UTF-8):   Aplet do odczytu aktualnego stanu XMMS-a
+Summary(pl.UTF-8):	Aplet do odczytu aktualnego stanu XMMS-a
 Name:		xmms-general-infopipe
 Version:	1.3
 Release:	25
